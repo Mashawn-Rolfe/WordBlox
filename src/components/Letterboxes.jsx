@@ -1,15 +1,15 @@
 import React from 'react'
 
-function Letterboxes({letter, green, yellow, lightBlue, darkBlue}) {
+function Letterboxes({letter, green, yellow}) {
   let bgColor;
   if (green) {
     bgColor = 'bg-green-500';
   } else if (yellow) {
     bgColor = 'bg-yellow-500';
-  }else if(lightBlue){
+  /*}else if(lightBlue){
     bgColor = 'bg-blue-400';
   }else if(darkBlue){
-    bgColor = 'bg-blue-700';
+    bgColor = 'bg-blue-700';*/
   }else{
     bgColor = 'bg-white';
   }

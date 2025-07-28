@@ -19,11 +19,11 @@ function Wordline({word,correctWord, correctLetterObject, reveal}) {
           return(
             <Letterboxes
             letter={letter} 
-            yellow={!correctLocation && correctLetter && reveal && !isDuplicate} 
-            green={correctLocation && correctLetter && reveal && !isDuplicate}
-            lightBlue={correctLocation && correctLetter && 
+            yellow={!correctLocation && correctLetter && reveal} 
+            green={correctLocation && correctLetter && reveal}
+            /*lightBlue={correctLocation && correctLetter && 
               reveal && isDuplicate} // correct letters in correct position but with duplicates
-            darkBlue={!correctLocation && correctLetter && reveal && isDuplicate} // correct letters in wrong position but with duplicates
+            darkBlue={!correctLocation && correctLetter && reveal && isDuplicate}*/ // correct letters in wrong position but with duplicates
             key={index}
             />
           )

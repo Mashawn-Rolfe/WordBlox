@@ -19,10 +19,10 @@ function App() {
     async function fetchWord() {
       const response = await axios.get('https://api.datamuse.com/words?sp=?????&max=1000'); // Assuming the API returns a word
       const wordList = response.data;
-      console.log(wordList);
+      //console.log(wordList);
       const randomise = Math.floor(Math.random()*wordList.length)
-      //const word = wordList[randomise].word;
-      const word = 'meter';
+      const word = wordList[randomise].word;
+      //const word = 'meter';
       console.log(`The correct word is: ${word}`); // Log the correct word for debugging
 
 
