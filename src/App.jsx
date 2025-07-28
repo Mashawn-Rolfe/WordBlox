@@ -143,6 +143,7 @@ function App() {
 
   return (
     <div>
+      <span div className="text-5xl font-bold">WordBlox</span> 
        {wordsGuessed.map((word, index)=> {
         if(index === guessCount){
           return (
